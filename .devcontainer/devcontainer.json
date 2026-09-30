@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/java",
+
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "true"
+		}
+	},
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+                "vscjava.vscode-java-pack",
+     			"ms-ceintl.vscode-language-pack-fr",
+				"streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-french"
+			]
+		}
+	}
+}
